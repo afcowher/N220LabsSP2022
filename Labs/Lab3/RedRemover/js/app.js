@@ -2,36 +2,27 @@
 //2/3/2022
 //N220
 
-//drawCar function - stores + defines the car object while also defining the function for making a car
-function drawCar(x, y){
-    //defines the 'car' object. Specifies the size of a tire, the size of a body, 
-    //and the colors of each of those components
-    let car = {
-        tireSize: 10,
-        bodySize: 30,
-        bodyColor: "#00FF00",
-        tireColor: "#000000"
-    };
-
-
-    //this block of code actually creates the car using the object properties defined above. The fill()
-    //functions color the body and tires, while the rect() and circle() functions draw the car itself.
-    //All of these functions are retrieving values from the car object above, but in the case of the
-    //rect() and circle() they are retrieving the (x, y) parameters from drawCar() as well
-    fill(car.bodyColor);
-    rect(x, y, car.bodySize);
-    fill(car.tireColor);
-    circle(x, y + car.bodySize, car.tireSize);
-    circle(x + car.bodySize, y + car.bodySize, car.tireSize);
+/*defines the removeRed function. This function is meant to pass a color through it, set the red value to 0,
+and return the full color (with red set to 0)
+*/
+function removeRed(c){
+   c.setRed(0);
+    return c;
 }
 
-//setup function that defines a canvas
+//setup function - defines the canvas
 function setup(){
     createCanvas(800, 600);
 }
 
-//draw function - puts a background and utilizes drawCar() by drawing a car at the user's mouse position
+//draw function - sets the background to grey
 function draw(){
     background("#808080");
-    drawCar(mouseX, mouseY);
+    /* stores the non-red color as a variable noRed. This non-red color is retrieved using the removeRed()
+    function */
+    let noRed = removeRed(color(170, 200, 150));
+    //sets the fill for the circle to be the non-red color (noRed)
+    fill(noRed);
+    //draws the circle at the center of the canvas with a diameter of 50
+    circle(400, 300, 50);
 }
