@@ -5,6 +5,6 @@
 let mc = document.getElementById("mcDiv");
 
 function addMc(){
-    mc.innerHTML += "Hello";
-    mc.append("Mc");
+    mc.innerHTML += "HELLO";
+    mc.append("mc");
 }
