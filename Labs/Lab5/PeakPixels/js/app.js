@@ -4,9 +4,9 @@
 
 let divSquare = document.getElementById("square");
 
-
-divSquare.innerHTML = "Hello";
+let squareWidthHeight = 100;
 
 function increaseSize(){
-    console.log(divSquare.style.width);
+    divSquare.style.width += (1.1 * squareWidthHeight) + "px";
+    divSquare.style.height += (1.1 * squareWidthHeight) + "px";
 }
