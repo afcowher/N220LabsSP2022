@@ -5,11 +5,12 @@
 //retrieves the div with id "square"
 let divSquare = document.getElementById("square");
 
-//variable storing the div's starting height/weight
-let squareWidthHeight = 100;
+//defines the starting size of the div square
+let size = 100;
 
 //increases the width and height of the div by 10%. This function is run once the div is clicked
 function increaseSize() {
-    divSquare.style.width += (1.1 * squareWidthHeight) + "px";
-    divSquare.style.height += (1.1 * squareWidthHeight) + "px";
+    size = 1.1 * size;
+    divSquare.style.width = size + "px";
+    divSquare.style.height = size + "px";
 }
