@@ -15,10 +15,10 @@ let thirdDiv = document.getElementById("third");
 let times = [100, 150, 200];
 
 //displays the first/fastest time in the array 
-firstDiv.append(times[0]);
+firstDiv.append(times[0] + "sec");
 
 //displays the second-fastest time in the array 
-secondDiv.append(times[1]);
+secondDiv.append(times[1] + "sec");
 
 //displays the last/slowest time in the array
-thirdDiv.append(times[2]);
+thirdDiv.append(times[2] + "sec");
