@@ -3,6 +3,9 @@
 //N220
 
 //access the div with id aDiv
+var xDiv = document.getElementById("xDiv");
+
+//access the div with id aDiv
 var aDiv = document.getElementById("aDiv");
 aDiv.innerHTML = "hello"
 
@@ -26,6 +29,8 @@ eDiv.innerHTML = "mister"
 var fDiv = document.getElementById("fDiv");
 fDiv.innerHTML = "code"
 
-function divHighlight(){
-    
+function divHighlight(x){
+    let a = document.getElementById(x);
+    a.style.backgroundColor = "#FFFF00";
+    a.style.fontWeight = "900";
 }
