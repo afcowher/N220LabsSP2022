@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Cowher - UI Navigation Handler</title>
-    <!--sets the style for the mDiv id - a width/height and background color-->
+    <!--sets the style for each div id - a width/height and, for the xDiv, a background color-->
     <style>
+        #xDiv {
+            width: 700px;
+            height: 100px;
+            background-color:blue;
+        }
         #aDiv {
             width: 100px;
             height: 100px;
@@ -35,23 +40,26 @@
 </head>
 <body>
 
+    <!--specifies the div by the id "xDiv"-->
+    <div id="xDiv"></div>
+
     <!--specifies the div by the id "aDiv"-->
-    <div id="aDiv"></div>
+    <div id="aDiv" onclick="aDivHighlight()"></div>
 
     <!--specifies the div by the id "bDiv"-->
-    <div id="bDiv"></div>
+    <div id="bDiv" onclick="bDivHighlight()"></div>
 
     <!--specifies the div by the id "cDiv"-->
-    <div id="cDiv"></div>
+    <div id="cDiv" onclick="cDivHighlight()"></div>
 
     <!--specifies the div by the id "dDiv"-->
-    <div id="dDiv"></div>
+    <div id="dDiv" onclick="dDivHighlight()"></div>
 
     <!--specifies the div by the id "eDiv"-->
-    <div id="eDiv"></div>
+    <div id="eDiv" onclick="eDivHighlight()"></div>
 
     <!--specifies the div by the id "fDiv"-->
-    <div id="fDiv" onclick="divHighlight(fDiv)"></div>
+    <div id="fDiv" onclick="fDivHighlight()"></div>
     
     <script src="js/app.js"></script>
 </body>
