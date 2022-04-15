@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Cowher - Color Mixer</title>
+     <!--styles for the 2 color divs-->
+    <style>
+       #rgb_box{
+           width: 70%;
+       }
+       #color_box{
+           height: 200px;
+           width: 70%;
+           background-color: rgb(0,0,0);
+       }
+   </style>
+</head>
+<body>
+   <!--specifies id for the div showing the color-->
+   <div id="color_box"></div>
+   <!--specifices id for the div displaying the RGB value of the current color-->
+   <div id="rgb_box">
+       <!--header + span for RGB value display text-->
+       <h2>current color:rgb(<span id="rgb_value"></span>)</h2>
+   </div>
+   <!--div for RGB buttons-->
+   <div>
+       <table>
+           <tr>
+               <td>Red:</td>
+               <td><button onclick="addRed1()">+1</button></td>
+               <td><button onclick="addRed5()">+5</button></td>
+               <td><button onclick="addRed10()">+10</button></td>
+           </tr>
+           <tr>
+               <td>Green:</td>
+               <td><button onclick="addGreen1()">+1</button></td>
+               <td><button onclick="addGreen5()">+5</button></td>
+               <td><button onclick="addGreen10()">+10</button></td>
+           </tr>
+           <tr>
+               <td>Blue:</td>
+               <td><button onclick="addBlue1()">+1</button></td>
+               <td><button onclick="addBlue5()">+5</button></td>
+               <td><button onclick="addBlue10()">+10</button></td>
+           </tr>
+       </table>
+   </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
