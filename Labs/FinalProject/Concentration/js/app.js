@@ -7,8 +7,8 @@ function flipCard(card, num) {
     //if statement for a card div with a numeric value
     if (num) {
         //retrieves the numeric value from a given card div and displays it briefly to the player
-        card.innerHTML = '<span id="checkCard" value=' + num + '>' + num + '<span>';
-        //retrieves the span tag which displays the number values on the card divs
+        card.innerHTML = '<span class="checkCard" value=' + num + '>' + num + '<span>';
+        //retrieves the span tag by a specific class name, displays the number values on the card divs
         var grids = document.getElementsByClassName('checkCard');
         //if two selected cards have a match, reveal them for two seconds before vanishing both
         if (grids.length == 2) {
